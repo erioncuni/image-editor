@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KB2 Image Editor</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_editor">Редактор</string>
+    <string name="button_get_img_camera">Камера</string>
+    <string name="button_get_img_gallery">Галерея</string>
+    <string name="button_rotate">Повернути</string>
+    <string name="button_rotate_90_left">На ліво 90</string>
+    <string name="button_rotate_90_right">На право 90</string>
+    <string name="button_rotate_180">Повернути 180</string>
+    <string name="button_brightess">Яркість</string>
+    <string name="name_window">Редактор</string>
+    <string name="name_menu_button">зберегти</string>
+    <string name="name_menu_button_in">прийняти</string>
+    <string name="button_reflect">Відобразити</string>
+    <string name="button_reflect_left_to_right">По ширині</string>
+    <string name="button_reflect_up_to_down">По висоті</string>
+    <string name="button_reflect_diagonally">По діагоналі</string>
+    <string name="title_activity_rotate">Повернути</string>
+    <string name="title_activity_reflect">Зеркально відобразити</string>
+    <string name="button_contrast">Контрастність</string>
+    <string name="button_contrast_increase">Збільшити</string>
+    <string name="button_contrast_decrease">Зменшити</string>
+    <string name="title_activity_contrast">Контрастність</string>
+    <string name="button_brightness">Яскравість</string>
+    <string name="button_brightness_increase">Збільшити</string>
+    <string name="button_brightness_decrease">Зменшити</string>
+    <string name="title_activity_brightness">Яскравість</string>
+    <string name="title_activity_effects">Ефекти</string>
+    <string name="button_effects">Ефекти</string>
+    <string name="button_effects_invert">Інвертувати</string>
+    <string name="button_effects_sepia">Сепія</string>
+    <string name="button_effects_blur">Розмиття</string>
+    <string name="button_effects_sharpening">Різкість</string>
+    <string name="button_effects_emboss">Рельєф</string>
+    <string name="button_effects_red_boost">Підв. Чер.</string>
+    <string name="button_effects_green_boost">Підв. Зел.</string>
+    <string name="button_effects_blue_boost">Підв. Гол.</string>
+     <string name="button_save_for_web">Налаштування зображення</string>
+         <string name="title_of_save_dialog">Зберегти..</string>
+    <string name="text_of_save_dialog">Введіть імя зображення</string>
+    <string name="button_of_save_dialog">Зберегти</string>
+    <string name="title_of_queshion">Ви не зберегли зображення. Ви дійсно хочете вийти?</string>
+    <string name="button_queshion_ok">Так</string>
+    <string name="button_queshion_cancel">Ні</string>
+
+</resources>

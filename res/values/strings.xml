@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KB2 Image Editor</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_editor">Editor</string>
+    <string name="button_get_img_camera">Camera</string>
+    <string name="button_get_img_gallery">Gallery</string>
+    <string name="button_rotate">Rotate</string>
+    <string name="button_rotate_90_left">Left 90</string>
+    <string name="button_rotate_90_right">Right 90</string>
+    <string name="button_rotate_180">Rotate 180</string>
+    <string name="button_brightess">Brightess</string>
+    <string name="name_window">Editor</string>
+    <string name="name_menu_button">save</string>
+    <string name="name_menu_button_in">accept</string>
+    <string name="title_activity_rotate">Rotate</string>
+    <string name="title_activity_reflect">Reflect</string>
+    <string name="button_reflect">Reflect</string>
+    <string name="button_reflect_left_to_right">Left to right</string>
+    <string name="button_reflect_up_to_down">Up to down</string>
+    <string name="button_reflect_diagonally">Diagonally</string>
+    <string name="button_contrast">Contrast</string>
+    <string name="button_contrast_increase">Increase</string>
+    <string name="button_contrast_decrease">Decrease</string>
+    <string name="title_activity_contrast">Contrast</string>
+    <string name="button_brightness">Brightness</string>
+    <string name="button_brightness_increase">Increase</string>
+    <string name="button_brightness_decrease">Decrease</string>
+    <string name="title_activity_brightness">Brightness</string>
+    <string name="title_activity_effects">Effects</string>
+    <string name="button_effects">Effects</string>
+    <string name="button_effects_invert">Invert</string>
+    <string name="button_effects_sepia">Sepia</string>
+    <string name="button_effects_blur">Blur</string>
+    <string name="button_effects_sharpening">Sharpening</string>
+    <string name="button_effects_emboss">Emboss</string>
+    <string name="button_effects_red_boost">Red Boost</string>
+    <string name="button_effects_green_boost">Green Boost</string>
+    <string name="button_effects_blue_boost">Blue Boost</string>
+    <string name="button_save_for_web">Save For Web</string>
+    <string name="title_of_save_dialog">Save..</string>
+    <string name="text_of_save_dialog">Please enter name of file</string>
+    <string name="button_of_save_dialog">Save</string>
+    <string name="title_of_queshion">You do not save image. Do you wont exit?</string>
+    <string name="button_queshion_ok">Yes</string>
+    <string name="button_queshion_cancel">No</string>
+    
+
+</resources>

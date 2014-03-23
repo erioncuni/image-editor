@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="About">Про програму..</string>
+    <string name="About_inf">Автор: Гладишев Ю.І.(KB2FTY7)</string>
+    <string name="About_email">E-MAIL: kb2fty7@gmail.com</string>
+    <string name="About_year">v1.0 2013</string>
+    <string name="About_button">Дякую</string>
+    
+</resources>

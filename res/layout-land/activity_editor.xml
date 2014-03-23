@@ -1,0 +1,381 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Editor" >
+
+    <FrameLayout
+        android:id="@+id/frame_layout_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/linear_layout_basic_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/abs__background_holo_dark" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/button_brightness"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_rotate"
+                        android:onClick="clickButtonRotate"
+                        android:text="@string/button_rotate"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button_reflect"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_reflect_diagonally"
+                        android:onClick="clickButtonReflect"
+                        android:text="@string/button_reflect"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button_rotate"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_contrast"
+                        android:onClick="clickButtonContrast"
+                        android:text="@string/button_contrast"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button_brighness"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_brightness_increase"
+                        android:onClick="clickButtonBrightness"
+                        android:text="@string/button_brightness"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button_effects"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects"
+                        android:onClick="clickButtonEffects"
+                        android:text="@string/button_effects"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+                    
+                    <Button
+                        android:id="@+id/button_save_for_web"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:text="@string/button_save_for_web"
+                        android:onClick="clickButtonSaveForWeb"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_rotate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/button_rotate_90_left"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_rotate_90_left"
+                android:onClick="clickButtonRotate_90_left"
+                android:text="@string/button_rotate_90_left"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button_rotate_90_right"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_rotate_90_right"
+                android:onClick="clickButtonRotate_90_right"
+                android:text="@string/button_rotate_90_right"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button_rotate_180"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_rotate_180"
+                android:onClick="clickButtonRotate_180"
+                android:text="@string/button_rotate_180"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_reflect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/button_reflect_left_to_right"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_reflect_left_to_right"
+                android:onClick="clickButtonReflect_leftToRight"
+                android:text="@string/button_reflect_left_to_right"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button_reflect_diagonally"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_reflect_diagonally"
+                android:onClick="clickButtonReflect_diagonally"
+                android:text="@string/button_reflect_diagonally"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button_reflect_up_to_down"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_reflect_up_to_down"
+                android:onClick="clickButtonReflect_upToDown"
+                android:text="@string/button_reflect_up_to_down"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_contrast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/button_reflect_diagonally"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_contrast"
+                android:onClick="clickButtonContrast_increase"
+                android:text="@string/button_contrast_increase"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button_reflect_up_to_down"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_contrast"
+                android:onClick="clickButtonContrast_decrease"
+                android:text="@string/button_contrast_decrease"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_brightness"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <Button
+                android:id="@+id/button_brightness1"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_brightness_increase"
+                android:onClick="clickButtonBrightness_increase"
+                android:text="@string/button_brightness_increase"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button_brightness2"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/abs__tab_indicator_ab_holo"
+                android:drawableTop="@drawable/ic_brightness_decrease"
+                android:onClick="clickButtonBrightness_decrease"
+                android:text="@string/button_brightness_decrease"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_effects"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/abs__background_holo_dark" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/button_effects_invert"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects_invert"
+                        android:onClick="clickButtonEffects_invert"
+                        android:text="@string/button_effects_invert"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button_effects_sepia"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects_sepia"
+                        android:onClick="clickButtonEffects_sepia"
+                        android:text="@string/button_effects_sepia"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button_effects_blur"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects_blur"
+                        android:onClick="clickButtonEffects_blur"
+                        android:text="@string/button_effects_blur"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/button_effects_sharpening"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects_sharpening"
+                        android:onClick="clickButtonEffects_sharpening"
+                        android:text="@string/button_effects_sharpening"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+                    
+                    <Button
+                        android:id="@+id/button_effects_emboss"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects_emboss"
+                        android:onClick="clickButtonEffects_emboss"
+                        android:text="@string/button_effects_emboss"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+                    
+                    
+                    
+                    
+                    
+                       <Button
+                        android:id="@+id/button_effects_redBoost"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects_red_boost"
+                        android:onClick="clickButtonEffects_redBoost"
+                        android:text="@string/button_effects_red_boost"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+                    <Button
+                        android:id="@+id/button_effects_greenBoost"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects_green_boost"
+                        android:onClick="clickButtonEffects_greenBoost"
+                        android:text="@string/button_effects_green_boost"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+                    <Button
+                        android:id="@+id/button_effects_blueBoost"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/abs__tab_indicator_ab_holo"
+                        android:drawableTop="@drawable/ic_effects_blue_boost"
+                        android:onClick="clickButtonEffects_blueBoost"
+                        android:text="@string/button_effects_blue_boost"
+                        android:textColor="@color/abs__holo_blue_light"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/view_editor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

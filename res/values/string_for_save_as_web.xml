@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sw_size">Size</string>
+    <string name="sw_discard_ratio">Discard ratio</string>
+    <string name="sw_level_of_compression">Level of compression:   </string>
+    <string name="sw_save">Save and Exit</string>
+    <string name="sw_accept">Accept</string>
+    <string name="sw_cancel">Cancel</string>
+    <string name="sw_width">W:</string>
+    <string name="sw_height">H:</string>
+    
+    
+</resources>

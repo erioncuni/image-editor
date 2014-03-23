@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:addStatesFromChildren="false"
+    android:orientation="horizontal"
+    android:theme="@style/Theme.Sherlock"
+    tools:context=".Main" >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Button_OpenCamera"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_camera"
+            android:text="@string/button_get_img_camera"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/get_image_button"
+             />
+
+
+        <Button
+            android:id="@+id/Button_OpenGallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_gallery"
+            android:text="@string/button_get_img_gallery"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/get_image_button"
+            />
+
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:src="@drawable/backgraund_logo" />
+
+</LinearLayout>

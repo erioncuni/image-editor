@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KB2 Image Editor</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_editor">Редактор</string>
+    <string name="button_get_img_camera">Камера</string>
+    <string name="button_get_img_gallery">Галерея</string>
+    <string name="button_rotate">Развернуть</string>
+    <string name="button_rotate_90_left">Влево 90</string>
+    <string name="button_rotate_90_right">Вправо 90</string>
+    <string name="button_rotate_180">Развернуть 180</string>
+    <string name="button_brightess">Яркость</string>
+    <string name="name_window">Редактор</string>
+    <string name="name_menu_button">сохранить</string>
+    <string name="name_menu_button_in">принять</string>
+    <string name="button_reflect">Отразить</string>
+    <string name="button_reflect_left_to_right">По ширине</string>
+    <string name="button_reflect_up_to_down">По высоте</string>
+    <string name="button_reflect_diagonally">По диагонали</string>
+    <string name="title_activity_rotate">Развернуть</string>
+    <string name="title_activity_reflect">Зеркально отразить</string>
+    <string name="button_contrast">Контрастность</string>
+    <string name="button_contrast_increase">Увеличить</string>
+    <string name="button_contrast_decrease">Уменшить</string>
+    <string name="title_activity_contrast">Контрастность</string>
+    <string name="button_brightness">Яркость</string>
+    <string name="button_brightness_increase">Увеличить</string>
+    <string name="button_brightness_decrease">Уменшить</string>
+    <string name="title_activity_brightness">Яркость</string>
+    <string name="title_activity_effects">Эффекты</string>
+    <string name="button_effects">Эффекты</string>
+    <string name="button_effects_invert">Инвертировать</string>
+    <string name="button_effects_sepia">Сепия</string>
+    <string name="button_effects_blur">Размытие</string>
+    <string name="button_effects_sharpening">Резкость</string>
+    <string name="button_effects_emboss">Рельеф</string>
+    <string name="button_effects_red_boost">Усил. Красн.</string>
+    <string name="button_effects_green_boost">Усил. Зелен.</string>
+    <string name="button_effects_blue_boost">Усил. Син.</string>
+    <string name="button_save_for_web">Настройки сохранения</string>
+    <string name="title_of_save_dialog">Сохранить..</string>
+    <string name="text_of_save_dialog">Введите имя для изображения</string>
+    <string name="button_of_save_dialog">Сохранить</string>
+    <string name="title_of_queshion">Вы не сохранили изменения. Вы действительно хотите выйти?</string>
+    <string name="button_queshion_ok">Да</string>
+    <string name="button_queshion_cancel">Нет</string>
+
+</resources>

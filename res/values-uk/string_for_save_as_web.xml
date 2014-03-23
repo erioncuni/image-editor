@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sw_size">Розмір</string>
+    <string name="sw_discard_ratio">Зберегти пропорції</string>
+    <string name="sw_level_of_compression">Рівень стисненя:   </string>
+    <string name="sw_accept">Прийняти</string>
+    <string name="sw_cancel">Відмінити</string>
+    <string name="sw_width">Ш:</string>
+    <string name="sw_height">В:</string>
+    
+    
+</resources>
